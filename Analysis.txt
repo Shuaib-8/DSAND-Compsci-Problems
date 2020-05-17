@@ -1,0 +1,66 @@
+This analysis documents the run time analysis (Worst-Case Big-O Notation) for each script solution (regarding the tasks) provided.
+
+Task 0:
+
+The solution is simply a way to search for elements within a collection of lists from a csv file through selecting subsets from a list based on indexing.
+Hence, any input irrespective of size provides the same output back in terms of run time analysis and comptutations. 
+Each line within the script illustrates to be 0(1)
+* O(1) - This algorithm's time complexity is constant because the output with respect to the values does not depend on the size of the input.
+
+Task 1: 
+
+Within this script, we attempt to find the unique (distinct/different) set of numbers from the calls/texts records.
+Given that we add to the set via list comprehension computations, the run time analysis depends on the size of the input, where the size of n is the length of observations over the two csvs (texts/calls)
+Initialising the set provides the computation to be of O(1).
+Moving to the list comprehension (creating lists of elements through iteration), these comprise of 4 lines with 4 iterations - O(4n + 4).
+Hence in total we get a worst-case Big-O of O(4n + 5). 
+* O(n) - Given the input is large over time, we can drop the constant/coefficients and keep the largest polynomial (degree), which simplifies to O(n)
+that comprises of a linear time complexity.
+
+Task 2:
+
+Again this script runs a for loop where the computation is based on finding the maximum values based on the collection of lists, where the run time analysis depends on the size of the input n within the calls csv.
+Using the collections module, we initialise a defaultdict - a dictionary that handles null observations, providing a computation of O(1).
+Given the for loop and including the computations where we add to the dictionary as keys/values, in total this can roughly approximate to O(4n + 1)
+* O(n) - Given the input is large over time, we can ignore the costant/coefficient and keep the largest polynomial (degree), which simplifies to O(n)
+that comprises of a linear time complexity.
+
+Task 3:
+
+**PART A**
+
+The script runs a for loop, where by the end of computation we sort the unique observations in said lexicographical order, hence the run time analysis depends on the size of the input n over the calls csv.
+Firstly, we start by initialising an empty list that is O(1)
+Then looping over the calls csv (iterating over lists) that is O(n)
+Then using branching and regexp conditionals to append to the empty list that simplifies overall to O(n)
+Finally we convert the list of numbers to a set and then use the built-in sorted to output each number in lexicographical order, where the computation simplifies to O(n log n).
+A rough total approximation could be simplified to O(n log n + 2n + 1).
+* O(n log n) - Given the order of operations over time as n grows large by such a bounded function (n grows tends towards infinity), we discount the lower order of the polynomial(s),
+in this case the constant and the linear coefficient term. 
+Hence we approximate this sorted algorithm to worst-case time complexity that is loglinear.
+
+**PART B**
+
+The second part of the script starts with initialising two lists, which together provide a computation of O(2).
+A for loop follows that iterates over the calls csv (iterating over lists) that is O(n), hence the run time analysis depends on the size of the input n over the calls csv 0(n).
+two branches follow to search for the right pattern, first for all outgoing Bangalore calls, and then for all calls between Bangalore numbers - eventually this appends to the above lists, so these lines altogether as computations become O(4)
+Once, we have the two lists, it then comes down to a simple calculation regarding the percentage of Bangalore-Bangalore calls/total Bangalore calls - where the computations within the algorithm altogether is O(n+2+4).
+* O(n) - Given the input is large over time, we can ignore the costant/coefficient and keep the largest polynomial (degree), which simplifies to O(n)
+that comprises of a linear time complexity.
+
+Task 4:
+
+The script starts with initialising 4 lists, together providing a computation of O(4).
+This is followed by three similar loops, given that the run-time analysis is dependent on the size of input n over each of the collections in the csv, that some up to O(3n).
+The iterations computed are then added to a list and converted to unique using the built-in set, which altogether add up to O(6).
+A final for loop is computed which runs over the calls csv and includes branching that checks/searches for possible telemarketers numbers, which altogether add up to approximately O(n+5).
+Finally we convert the list of numbers to a set and then use the built-in sorted to output each number in lexicographical order, where the computation simplifies to O(n log n).
+Altogether, we get an algorithm that approximates to O(4 + 6 + 5 + n + 3n + n log n).
+* O(n log n) - Given the order of operations over time as n grows large by such a bounded function (n grows tends towards infinity), we discount the lower order of the polynomial(s),
+in this case the constant and the linear coefficient term. 
+Hence we approximate this sorted algorithm to worst-case time complexity that is loglinear.
+
+
+
+
+
