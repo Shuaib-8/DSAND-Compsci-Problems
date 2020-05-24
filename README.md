@@ -1,2 +1,3 @@
 # Unscramble Computer Science Problems Using Python
 
+In this project, I set out to complete five tasks based on a fictional set of calls and texts (stored in a csv) exchanged during September 2016. I used Python to analyze and answer questions about the texts and calls contained in the dataset. Finally, I rounded the analysis off by documenting run time analyses of my solution and determine each algorithms' efficiency.
