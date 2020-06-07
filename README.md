@@ -13,3 +13,5 @@ Hence, the run time analysis of this algorithm is O(1).
 This tasks centres around calculating the distinct set of numbers from the calls/texts records as gathered from the csv files.
 As the algorithm loops (iterates) over the records and then checks to provide back only unique records, a larger input is proportional (linearly) to a longer run time.
 Thus, the run time analysis of this algorithm is similar to O(n+1), where we drop constants as we consider only large inputs overall, so this simplifies to O(n).
+
+## Task 2
