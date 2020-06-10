@@ -15,3 +15,5 @@ As the algorithm loops (iterates) over the records and then checks to provide ba
 Thus, the run time analysis of this algorithm is similar to O(n+1), where we drop constants as we consider only large inputs overall, so this simplifies to O(n).
 
 ## Task 2
+
+Similarly to task 1, this algorithm exploits looping over a collection of lists gathered from the csv file, given that the computation is a function of the size of the input (when it's very big) that is given as a list of lists (as n). Hence when we check the order of growth as the input size scales up, we find the complexity (worst) case to be around O(4n + 1). Overall, Given we drop constant and multiplicative factors as above, this simplifies to O(n) as well.
