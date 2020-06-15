@@ -23,3 +23,6 @@ Similarly to task 1, this algorithm exploits looping over a collection of lists 
 ***Part A***
 
 As above, this algorithm exploits looping over a collection of lists gathered from a csv file(s) - computation is a function of the size of the input - given as list of lists (size n). Furthermore, we take the distinct observations as a set of values that are sorted in a lexicographical order. Hence when we check the order of growth as the input size scales up, we find the complexity (worst) case to be around O(n log n + 2n + 1). Overall, given we drop constant/multlicative factors and in this case focus only on the dominant term (n log n), this simplifies to O(n log n) which is log-linear.
+
+***Part B***
+
