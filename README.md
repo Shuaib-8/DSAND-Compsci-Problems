@@ -26,3 +26,4 @@ As above, this algorithm exploits looping over a collection of lists gathered fr
 
 ***Part B***
 
+The second part of this task involes searching (looping/iterating) over a collection of lists gathered from the calls csv that is known to be (as a function of the algorithm) size of the input n (lists).
